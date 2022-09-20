@@ -1,8 +1,8 @@
 let score=20;
 let Hscore=0;
+let Ran=Math.floor(Math.random()*20) + 1;
 document.querySelector('.check').addEventListener('click',
 function mains(){
-    let Ran=Math.floor(Math.random()*20) + 1;
     let inp = Number(document.querySelector('.guess').value);
     if(!inp){
         document.querySelector('.message').innerHTML="No number";
@@ -34,6 +34,7 @@ function mains(){
     }
 });
 document.querySelector('.again').addEventListener('click',function again(){
+    let Ran=Math.floor(Math.random()*20) + 1;
     score=20;
     document.querySelector('.message').textContent='Start guessing...';
     document.querySelector('.number').textContent='?';
