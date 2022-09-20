@@ -1,8 +1,8 @@
-let Ran=Math.floor(Math.random()*20) + 1;
 let score=20;
 let Hscore=0;
 document.querySelector('.check').addEventListener('click',
 function mains(){
+    let Ran=Math.floor(Math.random()*20) + 1;
     let inp = Number(document.querySelector('.guess').value);
     if(!inp){
         document.querySelector('.message').innerHTML="No number";
