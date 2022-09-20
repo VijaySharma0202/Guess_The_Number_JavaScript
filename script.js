@@ -34,7 +34,7 @@ function mains(){
     }
 });
 document.querySelector('.again').addEventListener('click',function again(){
-    let Ran=Math.floor(Math.random()*20) + 1;
+    Ran=Math.floor(Math.random()*20) + 1;
     score=20;
     document.querySelector('.message').textContent='Start guessing...';
     document.querySelector('.number').textContent='?';
